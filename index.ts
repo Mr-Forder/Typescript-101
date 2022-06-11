@@ -49,4 +49,24 @@ age: 36
 }
 
 //Composing multiple types is known as a Union
-type WindowStates = 
+type WindowStates = "open"| "closed" | "minimized"
+type LockStates = "locked" | "unlocked"
+type OddNumberUnderTen = 1|3|5|7|9
+
+const windowState: WindowStates = "fuck i dont know"
+
+const myNumber:OddNumberUnderTen = 6
+
+
+
+//we want to make a function that returns the length of something 
+//strings have length, so does an array of strings
+
+
+const getLength = (param: string|string[]) => {
+    return param.length
+}
+
+getLength('poops')//5
+getLength(['poo1', 'poo2'])//2
+getLength(5)
